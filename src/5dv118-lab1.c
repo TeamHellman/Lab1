@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : 5dv118-lab1.c
- Author      : 
+ Author      :
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -13,5 +13,6 @@
 
 int main(void) {
 	puts("!!!Hello World!!!"); /* prints !!!Hello Wssssorld!!! */
+	/* fyfan*/
 	return EXIT_SUCCESS;
 }
