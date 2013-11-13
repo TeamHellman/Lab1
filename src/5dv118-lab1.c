@@ -16,6 +16,6 @@ int main(void) {
 	/* fyfanasda*/
 	int boriz = 2;
 	printf("%d", boriz);
-/*jhahaha*/
+/*jhahahahahahahahhahhaha*/
 	return 1;
 }
