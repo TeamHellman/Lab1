@@ -12,10 +12,10 @@
 
 int main(void) {
 
-	puts("!!!Hello World!!!"); /* prints !!!Hellddddddddddddddddddddddddddddo Wssssorld!!! */
+	puts("!!!Hello Worldytttttttt!!!"); /* prints !!!Hellddddddddddddddddddddddddddddo Wssssorld!!! */
 	/* fyfanasda*/
 	int boriz = 2;
 	printf("%d", boriz);
-/*jhahahahahahahahhahökllllllhaha*/
+/*jhahahahahahahahhahï¿½kllllllhaha*/
 	return 1;
 }
