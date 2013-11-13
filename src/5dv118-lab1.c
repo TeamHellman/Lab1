@@ -11,10 +11,7 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello Wssssorld!!! */
-	/* fyfanasda*/
-	int boris = 2;
-	printf("%d", boris);
-
-	return 1;
+	puts("!!!Hello World!!!"); /* prints !!!Hssello Wssssorld!!! */
+	/* fyfaaanasdasdasdasdasdasd*/
+	return EXIT_SUCCESS;
 }
