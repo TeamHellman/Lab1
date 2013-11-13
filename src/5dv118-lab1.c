@@ -14,8 +14,8 @@ int main(void) {
 
 	puts("!!!Hello World!!!"); /* prints !!!Hellddddddddddddddddddddddddddddo Wssssorld!!! */
 	/* fyfanasda*/
-	int boris = 2;
-	printf("%d", boris);
-
+	int boriz = 2;
+	printf("%d", boriz);
+/*jhahaha*/
 	return 1;
 }
