@@ -9,13 +9,27 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
-int main(void) {
+int main(int argc, char **argv){
+	FILE *ip;
+		struct node *first;
 
-	puts("!!!Hello Worldytttttttt!!!"); /* prints !!!Hellddddddddddddddddddddddddddddo Wssssorld!!! */
-	/* fyfanasda*/
-	int boriz = 2;
-	printf("%d", boriz);
-/*jhahahahahahahahhahï¿½kllllllhaha*/
-	return 1;
+		/* om vi ska läsa från stdin */
+		if(argc<=1)
+			ip=stdin;
+
+		/* Kontrollerar att filen verkligen finns och går att öppna */
+		else if((ip=fopen(argv[1], "r")) == NULL){
+		 	fprintf (stderr, "Error: Could not open and read file '%s'\n", argv[1]);
+			exit(1);
+		}
+
+		first=readFile(ip);
+
+		/* Stänger filen och returnerar första noden i listan */
+		if(ip!=stdin)
+			fclose(ip);
+		return 1;
 }
