@@ -11,11 +11,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+#define BUFSIZE 1024
 int main(int argc, char **argv){
 	FILE *ip;
-		struct node *first;
 
+		char line[BUFSIZE];
 		/* om vi ska läsa från stdin */
 		if(argc<=1)
 			ip=stdin;
@@ -26,7 +26,10 @@ int main(int argc, char **argv){
 			exit(1);
 		}
 
-		first=readFile(ip);
+		while(fgets(line,BUFSIZE, ip) != NULL){
+			printf("%s", line);
+		}
+
 
 		/* Stänger filen och returnerar första noden i listan */
 		if(ip!=stdin)
