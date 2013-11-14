@@ -25,11 +25,19 @@ int main(int argc, char **argv){
 		 	fprintf (stderr, "Error: Could not open and read file '%s'\n", argv[1]);
 			exit(1);
 		}
-
+		char *hex;
 		while(fgets(line,BUFSIZE, ip) != NULL){
-			printf("%s", line);
-		}
+			strncpy(hex, line, 2);
 
+			printf("%s ", hex);
+			if(strcmp(hex, "0x")==0){
+				printf(" hex ");
+			}
+
+			printf("%s", line);
+
+		}
+free(hex);
 
 		/* Stänger filen och returnerar första noden i listan */
 		if(ip!=stdin)
